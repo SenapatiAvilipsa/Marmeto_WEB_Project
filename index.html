@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart Page</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="logi.png" alt="Marmeto Logo" class="logo-img">
+            Marmeto
+        </div>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Shop</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+        </nav>
+        <div class="header-icons">
+            <a href="#" class="icon search-icon">
+                <i class="fas fa-search"></i>
+            </a>
+            <a href="#" class="icon heart-icon">
+                <i class="fas fa-heart"></i>
+            </a>
+            <a href="#" class="icon cart-icon">
+                <i class="fas fa-shopping-cart"></i>
+            </a>
+        </div>
+    </header>
+
+    <section class="breadcrumb">
+        
+        <div class="logo">
+            <img src="logi.png" alt="Marmeto Logo" class="logo-img">
+        </div>
+        <span>CART</span>
+        <span>Home &gt; Cart</span>
+
+    </section>
+
+    <main>
+        <section class="cart">
+            <h1>Cart</h1>
+            <table class="cart-table">
+                <thead>
+                    <tr>
+                        <th>Product</th>
+                        <th>Price</th>
+                        <th>Quantity</th>
+                        <th>Subtotal</th>
+                    </tr>
+                </thead>
+                <tbody id="cart-items">
+                    <!-- Cart items will be dynamically loaded here -->
+                </tbody>
+            </table>
+        </section>
+
+        <aside class="cart-totals">
+            <h2>Cart Totals</h2>
+            <div>
+                <span>Subtotal:</span>
+                <span id="subtotal">Rs. 0.00</span>
+            </div>
+            <div>
+                <span>Total:</span>
+                <span id="total">Rs. 0.00</span>
+            </div>
+            <button id="checkout-btn">Check Out</button>
+        </aside>
+    </main>
+
+    <footer>
+        <div class="footer-icons">
+            <div>
+                <i class="icon">🏆</i>
+                <p>High Quality</p>
+                <small>crafted from top materials</small>
+            </div>
+            <div>
+                <i class="icon">✅</i>
+                <p>Warranty Protection</p>
+                <small>Over 2 years</small>
+            </div>
+            <div>
+                <i class="icon">🚚</i>
+                <p>Free Shipping</p>
+                <small>Order over 150$</small>
+            </div>
+            <div>
+                <i class="icon">🕑</i>
+                <p>24/7 Support</p>
+                <small>Dedicated support</small>
+            </div>
+        </div>
+    </footer>
+
+    <script src="a.js"></script>
+   
+</body>
+</html>
