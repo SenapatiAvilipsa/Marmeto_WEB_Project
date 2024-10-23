@@ -1,0 +1,199 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #fff;
+    color: #333;
+    border-bottom: 1px solid #ddd;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.logo img {
+    width: 40px;
+    margin-right: 10px;
+}
+
+
+nav a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+}
+
+.header-icons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 120px;
+}
+
+.header-icons .icon {
+    text-decoration: none;
+    color: #000;
+    font-size: 20px;
+    padding: 0 10px;
+    cursor: pointer;
+}
+
+.header-icons .icon i {
+    display: inline-block;
+}
+
+.header-icons .icon:hover {
+    color: #999;
+}
+
+.breadcrumb {
+    position: relative;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.1); 
+    font-size: 14px;
+    color: #fff; 
+    width: 1440px;
+    height: 316px;
+    margin-top: 100px; 
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.breadcrumb::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('back.jpeg'); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: blur(3px); 
+    z-index: -1;
+}
+.breadcrumb span {
+    position: relative; 
+    z-index: 1;
+}
+   
+
+
+
+
+
+
+
+main {
+    display: flex;
+    padding: 40px 20px;
+    justify-content: space-between;
+}
+
+.cart {
+    width: 60%;
+}
+
+.cart h1 {
+    margin-bottom: 20px;
+}
+
+.cart-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.cart-table th, .cart-table td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.cart-table img {
+    width: 100px;
+}
+
+.cart-totals {
+    width: 30%;
+    background-color: #f9f5f0;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: left;
+}
+
+.cart-totals div {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    font-size: 18px;
+}
+
+.cart-totals button {
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    border: none;
+    width: 100%;
+    margin-top: 20px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.cart-totals button:hover {
+    background-color: #555;
+}
+
+footer {
+    background-color: #f7f7f7;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+.footer-icons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-icons div {
+    text-align: center;
+    flex: 1;
+}
+
+.footer-icons div i {
+    font-size: 24px;
+    display: block;
+    margin-bottom: 10px;
+}.delete-btn {
+    background: none;
+    border: none;
+    color: #d9534f; 
+    font-size: 18px;
+    cursor: pointer;
+    padding: 0;
+}
+
+.delete-btn:hover {
+    color: #c9302c; 
+}
+
+
